@@ -1,13 +1,268 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Personal webpage - Capstone project 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="./styles/style.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <!-- NUNITO + ROBOTO FONTs & OTHERS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+  <!-- Features
+        A hero section that provides a brief introduction to you and your background.
+
+        A resume page that lists your education, work experience, skills, and other relevant information (you can link to Capstone project 1).
+
+        A section that showcases any projects or work that you have done in the past.
+
+        An about me section that provides additional information about you and your interests.
+
+        A contact me section that includes information for users to get in touch with you. 
+
+        Possible color pallette
+        113F67 - darker blue
+        34699A - mid blue
+        58A0C8 - lighter blue
+        FDF5AA - light yellow 
+
+        SELECTED FONTS:
+        Heading - Nunito
+        Body - Roboto 
+
+        -->
+
+  <body>
+    <div class="top-container">
+      <div class="intro-text">
+        <h1>Hello, I'm Matheus.</h1>
+        <h2>Welcome to my webpage.</h2>
+      </div>
+    </div>
+    <section class="introduction">
+      <div class="px-4 pt-5 my-3 text-center">
+        <h2 class="display-4 fw-bold" style="color: #34699a">This is me...</h2>
+
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5">
+            <img
+              src="./images/linkedin_profile_pic_resized.jpg"
+              class="profile-img mt-3"
+              alt="Matheus' profile picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead my-2">
+            ...or, it actually "was", before I made the decision of switching
+            from Product Management to Software Development. Now I have a little
+            more gray hair.
+          </p>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="./resume.html">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg px-4 me-sm-3 resume-button"
+          >
+            Check out my resume
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" style="color: #34699a">Here are a few projects of my own</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-1.jpg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Example 1
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg
+                      class="bi me-2"
+                      width="1em"
+                      height="1em"
+                      role="img"
+                      aria-label="Location"
+                    >
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Earth</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg
+                      class="bi me-2"
+                      width="1em"
+                      height="1em"
+                      role="img"
+                      aria-label="Duration"
+                    >
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>3d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-2.jpg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Example 2
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg
+                      class="bi me-2"
+                      width="1em"
+                      height="1em"
+                      role="img"
+                      aria-label="Location"
+                    >
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg
+                      class="bi me-2"
+                      width="1em"
+                      height="1em"
+                      role="img"
+                      aria-label="Duration"
+                    >
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg')"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Example 3
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://github.com/twbs.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg
+                      class="bi me-2"
+                      width="1em"
+                      height="1em"
+                      role="img"
+                      aria-label="Location"
+                    >
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg
+                      class="bi me-2"
+                      width="1em"
+                      height="1em"
+                      role="img"
+                      aria-label="Duration"
+                    >
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+        <div class="px-4 pt-5 my-3 text-center">
+        <h2 class="display-4 fw-bold" style="color: #34699a">Feel free to reach out</h2>
+
+
+        <div class="col-lg-6 mx-auto">
+          <p class="lead my-2">
+            if you wanna discuss any of the topics you found here whether work related or not.
+          </p>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="mailto:mmc.matheusmendescosta@gmail.com">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg px-4 me-sm-3 resume-button"
+          >
+            Contact me
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

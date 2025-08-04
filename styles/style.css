@@ -1,0 +1,45 @@
+.top-container{    
+    background-color: #113F67;
+    height: 200px;
+}
+
+.intro-text{
+    color: #FDF5AA;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+h2{
+    font-family: Roboto;
+}
+
+.profile-img-container{
+    
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.profile-img {
+  height: 180px;
+  border-radius: 50%;
+}
+
+.resume-button {
+    background-color: #58A0C8;
+    border: none;
+}
+
+.work-experience{
+    min-width: 360px;
+}
+
+.back-button{
+    border-color: white;
+}
